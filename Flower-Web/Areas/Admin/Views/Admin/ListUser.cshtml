@@ -1,0 +1,130 @@
+﻿
+@{
+    ViewBag.Title = "ListUser";
+    Layout = "~/Areas/Admin/Views/Shared/LayoutAdmin.cshtml";
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Basic Page Info -->
+    <meta charset="utf-8">
+    <title>DeskApp - Bootstrap Admin Dashboard HTML Template</title>
+
+    <!-- Site favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="~/Areas/Admin/ContentAdmin/vendors/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="~/Areas/Admin/ContentAdmin/vendors/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="~/Areas/Admin/ContentAdmin/vendors/images/favicon-16x16.png">
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="~/Areas/Admin/ContentAdmin/vendors/styles/core.css">
+    <link rel="stylesheet" type="text/css" href="~/Areas/Admin/ContentAdmin/vendors/styles/icon-font.min.css">
+    <link rel="stylesheet" type="text/css" href="~/Areas/Admin/ContentAdmin/src/plugins/datatables/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="~/Areas/Admin/ContentAdmin/src/plugins/datatables/css/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="~/Areas/Admin/ContentAdmin/vendors/styles/style.css">
+
+
+</head>
+<body>
+    <!-- Simple Datatable start -->  
+        <table class="data-table table stripe hover nowrap">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Birthday</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>Phone</th>
+                    <th>Username</th>
+                    <th>Password</th>
+                    <th>CreateAt</th>
+                    <th>UpdateAt</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>A001</td>
+                    <td>Cường</td>
+                    <td>Nguyễn</td>
+                    <td>29-03-1994</td>
+                    <td>nguyenmanhcuong@gmail.com </td>
+                    <td>Bắc Giang</td>
+                    <td>099999999</td>
+                    <td>cuongnm01</td>
+                    <td>12345abc</td>
+                    <td>23-03-2022</td>
+                    <td>23-03-2022</td>
+                    <td>1</td>
+                    <td>
+                        <div class="dropdown">
+                            <a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                                <i class="dw dw-more"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+                                <a class="dropdown-item" href="#"><i class="dw dw-eye"></i> View</a>
+                                <a class="dropdown-item" href="#"><i class="dw dw-edit2"></i> Edit</a>
+                                <a class="dropdown-item" href="#"><i class="dw dw-delete-3"></i> Delete</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>A001</td>
+                    <td>Cường</td>
+                    <td>Nguyễn</td>
+                    <td>29-03-1994</td>
+                    <td>nguyenmanhcuong@gmail.com </td>
+                    <td>Bắc Giang</td>
+                    <td>099999999</td>
+                    <td>cuongnm01</td>
+                    <td>12345abc</td>
+                    <td>23-03-2022</td>
+                    <td>23-03-2022</td>
+                    <td>1</td>
+                    <td>
+                        <div class="dropdown">
+                            <a class="btn btn-link font-24 p-0 line-height-1 no-arrow dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+                                <i class="dw dw-more"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-menu-icon-list">
+                                <a class="dropdown-item" href="#"><i class="dw dw-eye"></i> View</a>
+                                <a class="dropdown-item" href="#"><i class="dw dw-edit2"></i> Edit</a>
+                                <a class="dropdown-item" href="#"><i class="dw dw-delete-3"></i> Delete</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>    
+    <!-- js -->
+    <script src="~/Areas/Admin/ContentAdmin/vendors/scripts/core.js"></script>
+    <script src="~/Areas/Admin/ContentAdmin/vendors/scripts/script.min.js"></script>
+    <script src="~/Areas/Admin/ContentAdmin/vendors/scripts/process.js"></script>
+    <script src="~/Areas/Admin/ContentAdmin/vendors/scripts/layout-settings.js"></script>
+    <script src="~/Areas/Admin/ContentAdmin/src/plugins/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="~/Areas/Admin/ContentAdmin/src/plugins/datatables/js/dataTables.bootstrap4.min.js"></script>
+    <script src="~/Areas/Admin/ContentAdmin/src/plugins/datatables/js/dataTables.responsive.min.js"></script>
+    <script src="src/plugins/datatables/js/responsive.bootstrap4.min.js"></script>
+    <!-- buttons for Export datatable -->
+    <script src="~/Areas/Admin/ContentAdmin/src/plugins/datatables/js/dataTables.buttons.min.js"></script>
+    <script src="~/Areas/Admin/ContentAdmin/src/plugins/datatables/js/buttons.bootstrap4.min.js"></script>
+    <script src="~/Areas/Admin/ContentAdmin/src/plugins/datatables/js/buttons.print.min.js"></script>
+    <script src="~/Areas/Admin/ContentAdmin/src/plugins/datatables/js/buttons.html5.min.js"></script>
+    <script src="~/Areas/Admin/ContentAdmin/src/plugins/datatables/js/buttons.flash.min.js"></script>
+    <script src="~/Areas/Admin/ContentAdmin/src/plugins/datatables/js/pdfmake.min.js"></script>
+    <script src="~/Areas/Admin/ContentAdmin/src/plugins/datatables/js/vfs_fonts.js"></script>
+    <!-- Datatable Setting js -->
+    <script src="~/Areas/Admin/ContentAdmin/vendors/scripts/datatable-setting.js"></script>
+</body>
+</html>
+
